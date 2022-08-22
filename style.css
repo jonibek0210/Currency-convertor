@@ -1,0 +1,230 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+/* ========================================================= */
+
+body {
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   background: url(https://wepro.uz/_nuxt/img/dots.819d6e9.svg), linear-gradient(to right, #c21500, #ffc500);
+}
+
+.card {
+   position: relative;
+   z-index: 10;
+   width: 60%;
+   padding: 30px;
+   background-color: hsla(0, 0%, 100%, .1);
+   border-radius: 8px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   backdrop-filter: blur(7px);
+}
+
+.card h1 {
+   text-align: center;
+   letter-spacing: 3px;
+   color: #fff;
+   font-size: 40px;
+}
+
+.box {
+   display: flex;
+   margin-top: 20px;
+}
+
+.left_box,
+.right_box {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.block_img {
+   width: 20%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   margin: 0 10px;
+}
+
+.image {
+   width: 50px;
+   height: 40px;
+}
+
+input,
+select {
+   width: 100%;
+   border: 1px solid #fff;
+   color: #d7d7d7;
+   padding: 10px;
+   border-radius: 8px;
+   outline: none;
+   background-color: transparent;
+}
+
+input::placeholder {
+   color: #fff;
+}
+
+.bottom_block {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+button {
+   width: 60%;
+   padding: 10px;
+   border: none;
+   outline: none;
+   border-radius: 8px;
+   margin-top: 20px;
+   background-color: #ffaf00;
+   color: #fff;
+   font-size: 18px;
+   letter-spacing: 2px;
+   cursor: pointer;
+}
+
+/* ================================================ */
+
+.wrap {
+   height: 283px;
+   position: relative;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+}
+
+.img_btc {
+   position: absolute;
+   top: -50px;
+   left: 16.5%;
+   animation: btc 5s infinite;
+}
+
+.img_dollor {
+   position: absolute;
+   top: 35%;
+   right: 15%;
+   z-index: -3;
+   animation: dollor 30s infinite;
+}
+
+.img_eur {
+   position: absolute;
+   top: 80%;
+   left: 25%;
+   animation: eur 15s infinite;
+}
+
+.img_rub {
+   position: absolute;
+   top: -28%;
+   right: 30%;
+   z-index: 10;
+   animation: rub 4s infinite;
+}
+
+.img_btc_animation {
+   position: absolute;
+   top: 0;
+   left: 45%;
+   width: 50px;
+   animation: btc_animation 20s infinite;
+   z-index: -1;
+}
+
+.img_btc_animation:nth-child(2) {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   width: 50px;
+   animation: btc_animation 20s infinite .5s;
+   z-index: -1;
+}
+
+@keyframes btc_animation {
+   0% {
+      top: 0;
+   }
+
+   100% {
+      top: 94%;
+   }
+}
+
+@keyframes rub {
+   0% {
+      top: -25%;
+   }
+
+   50% {
+      top: -21%;
+   }
+
+   100% {
+      top: -25%;
+   }
+}
+
+@keyframes eur {
+   0% {
+      top: -25%;
+      left: 35%;
+   }
+
+   50% {
+      top: 80%;
+      left: 25%;
+   }
+
+   100% {
+      top: -25%;
+      left: 35%;
+   }
+}
+
+@keyframes dollor {
+   0% {
+      right: 15%;
+   }
+
+   50% {
+      right: 45%;
+   }
+
+   100% {
+      right: 15%;
+   }
+}
+
+@keyframes btc {
+   0% {
+      top: -16%;
+   }
+
+   50% {
+      top: -12%;
+   }
+
+   100% {
+      top: -16%;
+   }
+}
